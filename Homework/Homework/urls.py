@@ -17,10 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from Homeworkk1app.views import pageNotFound
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include('hmapp.urls')),
     # path('', include('hmapp2.urls')),
-    path('', include('Homeworkk1app.urls')),
+    path('hm1', include('Homeworkk1app.urls')),
 
 ]
+handler404 = pageNotFound
