@@ -25,7 +25,7 @@ def about_me(reqwest):
     :param reqwest:
     :return:
     """
-    return render(reqwest, 'about_me.html')
+    return render(reqwest, 'about.html')
 
 
 def index(reqwest):
