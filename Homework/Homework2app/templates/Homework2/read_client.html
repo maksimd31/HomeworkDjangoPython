@@ -1,0 +1,17 @@
+{% extends 'Homework2/base.html' %}
+
+{% block title %}
+    {{ client.name }}
+{% endblock %}
+
+{% block content %}
+    <h2>{{ client.name }}</h2>
+    <p><strong>Email:</strong> {{ client.email }}</p>
+    <p><strong>Номер телефона:</strong> {{ client.telefone_number }}</p>
+    <p><strong>Адрес:</strong> {{ client.adress }}</p>
+    <a href="{% url 'update_client' client.id %}">Редактировать</a>
+    <form method="post" action="{% url 'delete_client' client.id %}" style="display: inline">
+        {% csrf_token %}
+        <button type="submit">Удалить</button>
+    </form>
+{% endblock %}
