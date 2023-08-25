@@ -602,3 +602,5 @@ TypeError: read_client() missing 1 required positional argument: 'client_id'
 2023-08-25 19:59:48,377 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 634
 2023-08-25 19:59:51,780 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 1299
 2023-08-25 19:59:52,979 - INFO - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 200 1567
+2023-08-25 20:00:42,710 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-25 20:00:43,062 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
