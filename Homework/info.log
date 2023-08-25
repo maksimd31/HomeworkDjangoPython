@@ -115,3 +115,9 @@ django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' 
 2023-08-25 16:05:19,963 - INFO - basehttp - basehttp.py - "GET /create_client HTTP/1.1" 200 1187
 2023-08-25 16:05:27,837 - INFO - basehttp - basehttp.py - "POST /create_client HTTP/1.1" 200 40
 2023-08-25 16:05:35,519 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 738
+2023-08-25 18:31:40,255 - INFO - basehttp - basehttp.py - "GET /create_client HTTP/1.1" 200 1187
+2023-08-25 18:31:42,732 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 629
+2023-08-25 18:35:45,660 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-08-25 18:35:46,016 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 18:37:05,842 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-08-25 18:37:06,145 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader

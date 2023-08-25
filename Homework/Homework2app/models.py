@@ -10,10 +10,10 @@ class Client(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.name
+        return f'{self.name}'
 
     def __repr__(self):
-        return self.name
+        return f'{self.name}'
 
 
 class Products(models.Model):
@@ -32,7 +32,7 @@ class Products(models.Model):
 
 
 class Order(models.Model):
-    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    client = models.ForeignKey(Client, on_delete=models.CASCADE) # для дипломного проекта не подойдет
     products = models.ManyToManyField(Products)
     total_price = models.IntegerField()
     order_date = models.DateTimeField(auto_now_add=True)
