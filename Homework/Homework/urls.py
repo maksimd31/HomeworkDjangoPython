@@ -25,7 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include('hmapp.urls')),
     # path('', include('hmapp2.urls')),
-    path('', include('Homework2app.urls')),
+    path('hm1', include('Homeworkk1app.urls')),
 
 ]
 if settings.DEBUG:
