@@ -55,3 +55,63 @@
 2023-08-25 15:33:15,729 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/urls.py changed, reloading.
 2023-08-25 15:33:16,103 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
 2023-08-25 15:50:15,556 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 15:54:25,716 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-08-25 15:54:26,046 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 15:55:23,167 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 15:56:34,912 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/urls.py changed, reloading.
+2023-08-25 15:56:35,236 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 15:58:13,345 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 16:01:43,581 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 16:01:46,926 - ERROR - log - log.py - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 14, in index
+    return render(reqwest, 'Homework2/index.html', {'menu': menu, 'title': 'Главная страница'})
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+2023-08-25 16:01:46,929 - ERROR - basehttp - basehttp.py - "GET / HTTP/1.1" 500 146811
+2023-08-25 16:01:47,017 - WARNING - log - log.py - Not Found: /favicon.ico
+2023-08-25 16:01:47,017 - WARNING - basehttp - basehttp.py - "GET /favicon.ico HTTP/1.1" 404 3081
+2023-08-25 16:02:20,010 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 169
+2023-08-25 16:02:39,515 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 143
+2023-08-25 16:02:40,298 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 143
+2023-08-25 16:02:49,534 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 634
+2023-08-25 16:02:51,432 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 764
+2023-08-25 16:05:17,282 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 659
+2023-08-25 16:05:19,963 - INFO - basehttp - basehttp.py - "GET /create_client HTTP/1.1" 200 1187
+2023-08-25 16:05:27,837 - INFO - basehttp - basehttp.py - "POST /create_client HTTP/1.1" 200 40
+2023-08-25 16:05:35,519 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 738
