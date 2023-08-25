@@ -50,3 +50,7 @@
 2023-08-21 11:07:07,097 - INFO - basehttp - basehttp.py - "GET /about_me HTTP/1.1" 200 361
 2023-08-21 11:07:07,430 - INFO - basehttp - basehttp.py - "GET /home HTTP/1.1" 200 371
 2023-08-21 11:07:07,814 - INFO - basehttp - basehttp.py - "GET /about_me HTTP/1.1" 200 361
+2023-08-25 15:33:13,252 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-08-25 15:33:13,589 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 15:33:15,729 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/urls.py changed, reloading.
+2023-08-25 15:33:16,103 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
