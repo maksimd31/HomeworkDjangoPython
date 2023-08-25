@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class Client(models.Model):
     name = models.CharField(max_length=100)  # буквы
     email = models.EmailField()
@@ -10,10 +9,10 @@ class Client(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'{self.name}'
+        return f'{self.name} {self.email}'
 
     def __repr__(self):
-        return f'{self.name}'
+        return f'{self.name} {self.email}'
 
 
 class Products(models.Model):
@@ -25,23 +24,23 @@ class Products(models.Model):
     product_photo = models.ImageField(upload_to='photos/%y/%m%d/')
 
     def __str__(self):
-        return self.product_name
+        return f'{self.product_name}'
 
     def __repr__(self):
-        return self.product_name
+        return f'{self.product_name}'
 
 
 class Order(models.Model):
-    client = models.ForeignKey(Client, on_delete=models.CASCADE) # для дипломного проекта не подойдет
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)  # для дипломного проекта не подойдет
     products = models.ManyToManyField(Products)
     total_price = models.IntegerField()
     order_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.client
+        return f'{self.client}'
 
     def __repr__(self):
-        return self.client
+        return f'{self.client}'
 
 
 '''

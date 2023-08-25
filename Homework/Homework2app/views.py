@@ -20,12 +20,12 @@ def about(reqwest):
 
 def client(reqwest):
     posts = Client.objects.all()  # выводим все данные из таблицы клиенты
-    return render(reqwest, 'Homework2/client.html', {'posts': posts, 'title': 'Все клиенты'})
+    return render(reqwest, 'Homework2/client/client.html', {'posts': posts, 'title': 'Все клиенты'})
 
 
 def product(reqwest):
     all_product = Products.objects.all()
-    return render(reqwest, 'Homework2/client.html', {'posts': all_product, 'title': 'Все Продукты'})
+    return render(reqwest, 'Homework2/client/client.html', {'posts': all_product, 'title': 'Все Продукты'})
 
 
 def create_client(request):
@@ -34,17 +34,22 @@ def create_client(request):
     :param request:
     :return:
     """
-    if request.method == 'POST':
-        client_name = request.POST.get('client_name')
-        client_email = request.POST.get('client_email')
-        client_telefone_number = request.POST.get('client_telefone_number')
-        client_adress = request.POST.get('client_adress')
-        new_client = Client(name=client_name, email=client_email, telefone_number=client_telefone_number,
-                            adress=client_adress)
-        new_client.save()
-        return HttpResponse('Клиент успешно создан')
-    else:
-        return render(request, 'Homework2/create_client.html')
+    try:
+        if request.method == 'POST':
+            client_name = request.POST.get('client_name')
+            client_email = request.POST.get('client_email')
+            client_telefone_number = request.POST.get('client_telefone_number')
+            client_adress = request.POST.get('client_adress')
+            new_client = Client(name=client_name, email=client_email, telefone_number=client_telefone_number,
+                                adress=client_adress)
+            new_client.save()
+            # return HttpResponse('Клиент успешно создан')
+            return render(request, 'Homework2/client/client_add.html')
+        else:
+            return render(request, 'Homework2/client/create_client.html')
+    except Exception as e:
+        print(f"При создании клиента4 возникло исключение: {e}")
+        return render(request, 'Homework2/client/client_exeption.html')
 
 
 def read_client(request, client_id):
