@@ -264,3 +264,341 @@ ValueError: Field 'telefone_number' expected a number but got ''.
 2023-08-25 19:24:09,216 - INFO - basehttp - basehttp.py - "GET /create_client HTTP/1.1" 200 1189
 2023-08-25 19:24:15,588 - INFO - basehttp - basehttp.py - "POST /create_client HTTP/1.1" 200 816
 2023-08-25 19:24:17,986 - INFO - basehttp - basehttp.py - "GET /create_client HTTP/1.1" 200 1189
+2023-08-25 19:30:04,251 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/urls.py changed, reloading.
+2023-08-25 19:30:04,601 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:31:31,414 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/urls.py changed, reloading.
+2023-08-25 19:31:31,720 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:31:35,842 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 634
+2023-08-25 19:31:37,548 - ERROR - log - log.py - Internal Server Error: /client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: Homework2/client/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 23, in client
+    return render(reqwest, 'Homework2/client/client.html', {'posts': posts, 'title': 'Все клиенты'})
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: Homework2/client/base.html
+2023-08-25 19:31:37,551 - ERROR - basehttp - basehttp.py - "GET /client HTTP/1.1" 500 129972
+2023-08-25 19:32:12,284 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 1213
+2023-08-25 19:34:03,449 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 1213
+2023-08-25 19:36:33,031 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 1299
+2023-08-25 19:36:34,463 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:36:34,464 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:37:25,011 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:37:25,012 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:37:57,424 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:37:57,424 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:37:58,372 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:37:58,372 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:37:59,188 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:37:59,189 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:37:59,473 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:37:59,473 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:37:59,739 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:37:59,739 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:38:05,674 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:38:05,675 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:38:10,742 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:38:10,742 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:39:19,741 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:39:19,741 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:39:20,888 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:39:20,888 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:40:35,593 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-25 19:40:35,954 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:40:37,090 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Homework2app.views.read_client didn't return an HttpResponse object. It returned None instead.
+2023-08-25 19:40:37,090 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 61546
+2023-08-25 19:40:37,980 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Homework2app.views.read_client didn't return an HttpResponse object. It returned None instead.
+2023-08-25 19:40:37,980 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 61546
+2023-08-25 19:41:37,643 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-25 19:41:37,987 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:46:47,681 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-25 19:46:48,015 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:46:50,189 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 634
+2023-08-25 19:46:52,677 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 1299
+2023-08-25 19:46:53,906 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 61, in read_client
+    return render(request, 'read_client_form.html')
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: read_client_form.html
+2023-08-25 19:46:53,907 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 75580
+2023-08-25 19:48:23,125 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-25 19:48:23,458 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:48:39,420 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 61, in read_client
+    return render(request, 'read_client_form.html')
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: read_client_form.html
+2023-08-25 19:48:39,421 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 75448
+2023-08-25 19:49:49,436 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/urls.py changed, reloading.
+2023-08-25 19:49:49,763 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:50:07,025 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/urls.py changed, reloading.
+2023-08-25 19:50:07,347 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:50:08,869 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 61, in read_client
+    return render(request, 'read_client_form.html')
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: read_client_form.html
+2023-08-25 19:50:08,870 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 75291
+2023-08-25 19:50:10,123 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 61, in read_client
+    return render(request, 'read_client_form.html')
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: read_client_form.html
+2023-08-25 19:50:10,124 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 75291
+2023-08-25 19:51:04,256 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 61, in read_client
+    return render(request, 'read_client_form.html')
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: read_client_form.html
+2023-08-25 19:51:04,257 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 75291
+2023-08-25 19:51:05,173 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 61, in read_client
+    return render(request, 'read_client_form.html')
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: read_client_form.html
+2023-08-25 19:51:05,174 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 75291
+2023-08-25 19:51:11,647 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 61, in read_client
+    return render(request, 'read_client_form.html')
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: read_client_form.html
+2023-08-25 19:51:11,648 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 75448
+2023-08-25 19:51:19,326 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 634
+2023-08-25 19:51:20,942 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 1299
+2023-08-25 19:51:21,727 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 61, in read_client
+    return render(request, 'read_client_form.html')
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: read_client_form.html
+2023-08-25 19:51:21,727 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 75448
+2023-08-25 19:55:07,208 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-25 19:55:07,537 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:56:59,672 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-25 19:57:00,020 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:57:01,152 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:57:01,152 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:57:01,795 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:57:01,795 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:57:20,258 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 634
+2023-08-25 19:57:22,035 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 1299
+2023-08-25 19:57:22,766 - ERROR - log - log.py - Internal Server Error: /read_client
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: read_client() missing 1 required positional argument: 'client_id'
+2023-08-25 19:57:22,767 - ERROR - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 500 56872
+2023-08-25 19:59:46,697 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-25 19:59:47,017 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 19:59:48,377 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 634
+2023-08-25 19:59:51,780 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 1299
+2023-08-25 19:59:52,979 - INFO - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 200 1567

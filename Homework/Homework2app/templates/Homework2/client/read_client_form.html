@@ -1,0 +1,13 @@
+{% extends 'Homework2/base.html' %}
+
+{% block content %}
+  <h2>Введите ID клиента</h2>
+  <form method="post" action="{% url 'read_client' %}">
+    {% csrf_token %}
+    <label for="client_id">ID клиента:</label>
+    <input type="text" name="client_id" id="client_id">
+
+
+    <input type="submit" value="Просмотреть данные">
+  </form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'Homework2/base.html' %}
+
+{% block content %}
+<h1>Информация о клиенте</h1>
+<hr>
+<form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="client_id" value="{{ client.id }}">
+    <p>
+        <label for="client_name">Имя клиента:</label>
+        <input type="text" name="client_name" id="client_name" value="{{ client.name }}" required>
+    </p>
+    <p>
+        <label for="client_email">Email клиента:</label>
+        <input type="email" name="client_email" id="client_email" value="{{ client.email }}" required>
+    </p>
+    <p>
+        <label for="client_telefone_number">Номер телефона клиента:</label>
+        <input type="tel" name="client_telefone_number" id="client_telefone_number" value="{{ client.telefone_number }}" required>
+    </p>
+    <p>
+        <label for="client_adress">Адрес клиента:</label>
+        <textarea name="client_adress" id="client_adress" cols="30" rows="10">{{ client.adress }}</textarea>
+    </p>
+    <button type="submit">Сохранить</button>
+</form>
+{% endblock %}
