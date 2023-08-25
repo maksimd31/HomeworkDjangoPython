@@ -1,0 +1,22 @@
+{% extends 'Homework2/base.html' %}
+
+{% block content %}
+<h1>{{title}}</h1>
+
+<a href="create_client"><button>Добавить клиента</button></a>
+
+<ul>
+    {% for p in posts %}
+    <li>
+        <h2>{{p.name}}</h2>
+        <p>{{p.email}}</p>
+        <hr>
+    </li>
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
+
+
+
