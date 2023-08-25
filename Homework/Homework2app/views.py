@@ -74,26 +74,6 @@ def read_client(request):
         print(f"При редактировании клиента возникло исключение: {e}")
         return render(request, 'Homework2/client/client_exeption.html')
 
-
-# def delete_client(request, client_id):
-#     """
-#     Функция удаления клиента
-#     :param request:
-#     :param client_id: id клиента
-#     :return:
-#     """
-#     try:
-#         client = get_object_or_404(Client, id=client_id)
-#         if request.method == 'POST':
-#             client.delete()
-#             return render(request, 'Homework2/client/client_delete.html')
-#         else:
-#             return render(request, 'Homework2/client/client_delete.html', {'client': client})
-#     except Exception as e:
-#         print(f"При удалении клиента возникло исключение: {e}")
-#         return render(request, 'Homework2/client/client_exeption.html')
-
-
 # def read_client(request):
 #     if request.method == 'POST':
 #         client_id = request.POST.get('client_id')
