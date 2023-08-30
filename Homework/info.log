@@ -844,3 +844,15 @@ UnboundLocalError: local variable 'days_ago' referenced before assignment
 2023-08-30 12:38:50,568 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12439
 2023-08-30 12:38:52,069 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12437
 2023-08-30 12:38:52,950 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12433
+2023-08-30 13:46:50,418 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 13:46:52,486 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15695
+2023-08-30 13:47:01,943 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15695
+2023-08-30 13:48:48,542 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 13:48:48,931 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 13:50:12,758 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 13:50:13,116 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 13:50:52,554 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 13:50:53,025 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 13:55:46,336 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 13:56:24,305 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 13:56:26,868 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15695

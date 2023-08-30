@@ -102,8 +102,6 @@ def get_ordered_products(client, days=None, months=None, years=None):
     return list(ordered_products)
 
 
-
-
 # def orders_in_past_days(request):
 #     clients = Client.objects.all()
 #     context = {
@@ -139,13 +137,13 @@ def orders_in_past_days(request):
         client = Client.objects.get(id=client_id)
         days = request.POST.get('report')
         if days == '7':
-            orders = Order.objects.filter(client=client, order_date__gte=timezone.now()-timedelta(days=7))
+            orders = Order.objects.filter(client=client, order_date__gte=timezone.now() - timedelta(days=7))
             time_period = 'неделю'
         elif days == '30':
-            orders = Order.objects.filter(client=client, order_date__gte=timezone.now()-timedelta(days=30))
+            orders = Order.objects.filter(client=client, order_date__gte=timezone.now() - timedelta(days=30))
             time_period = 'месяц'
         else:
-            orders = Order.objects.filter(client=client, order_date__gte=timezone.now()-timedelta(days=365))
+            orders = Order.objects.filter(client=client, order_date__gte=timezone.now() - timedelta(days=365))
             time_period = 'год'
         products = []
         for order in orders:
@@ -157,12 +155,6 @@ def orders_in_past_days(request):
             'days': time_period
         })
     return render(request, 'Homework2/report.html', context)
-
-
-
-
-
-
 
 
 # def read_client(request):
@@ -281,3 +273,27 @@ def orders_in_past_days(request):
 #     order = get_object_or_404(Order, id=order_id)
 #     order.delete()
 #     return HttpResponse('Заказ успешно удален')
+
+
+'''
+Код с лекции
+'''
+import logging
+from django.shortcuts import render
+from .forms import ClientForm
+
+logger = logging.getLogger(__name__)
+
+
+def user_form(request):
+    if request.method == 'POST':
+        form = ClientForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            age = form.cleaned_data['age']
+# Делаем что-то с данными
+            logger.info(f'Получили {name=}, {email=}, {age=}.')
+    else:
+        form = ClientForm()
+        return render(request, 'Homework2/client_forms.html', {'form': form})
