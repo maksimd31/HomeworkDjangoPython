@@ -8,5 +8,6 @@ urlpatterns = [
     path('index', views.index, name='index'),
     path('create_client', views.create_client, name='create_client'),
     path('read_client', views.read_client, name='read_client'),
-    path('read_client_form', views.read_client, name='read_client_form')
+    path('read_client_form', views.read_client, name='read_client_form'),
+    path('report', views.orders_in_past_days, name='report')
 ]

@@ -1,9 +1,14 @@
 from django.shortcuts import render
-
+from django.db.models import Q
+from datetime import datetime, timedelta, timezone
+from django.utils import timezone
+from .models import Order
 # Create your views here.
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import Client, Products, Order
+from django.utils import timezone
+from datetime import timedelta
 
 # Create your views here.
 
@@ -74,6 +79,92 @@ def read_client(request):
         print(f"При редактировании клиента возникло исключение: {e}")
         return render(request, 'Homework2/client/client_exeption.html')
 
+
+def get_ordered_products(client, days=None, months=None, years=None):
+    today = datetime.now()
+    if days:
+        start_date = today - timedelta(days=days)
+    elif months:
+        start_date = today - timedelta(days=months * 30)
+    elif years:
+        start_date = today - timedelta(days=years * 365)
+    else:
+        return []
+
+    orders = Order.objects.filter(client=client, order_date__gte=start_date)
+
+    ordered_products = set()
+    for order in orders:
+        products = order.products.all()
+        for product in products:
+            ordered_products.add(product)
+
+    return list(ordered_products)
+
+
+
+
+# def orders_in_past_days(request):
+#     clients = Client.objects.all()
+#     context = {
+#         'clients': clients
+#     }
+#     if request.method == 'POST':
+#         client_id = request.POST.get('client_id')
+#         client = Client.objects.get(id=client_id)
+#         orders = Order.objects.filter(client=client, order_date__gte=timezone.now()-timedelta(days=365))
+#         for days, days_name in [(30, 'месяц'), (7, 'неделю')]:
+#             if orders.count() == 0:
+#                 orders = Order.objects.filter(client=client, order_date__gte=timezone.now()-timedelta(days=days))
+#                 days = days_name
+#                 break
+#         products = []
+#         for order in orders:
+#             products.extend(order.products.all())
+#         products = list(set(products))
+#         context.update({
+#             'client': client,
+#             'products': products,
+#             'days': days
+#         })
+#     return render(request, 'Homework2/report.html', context)
+
+def orders_in_past_days(request):
+    clients = Client.objects.all()
+    context = {
+        'clients': clients
+    }
+    if request.method == 'POST':
+        client_id = request.POST.get('client_id')
+        client = Client.objects.get(id=client_id)
+        days = request.POST.get('report')
+        if days == '7':
+            orders = Order.objects.filter(client=client, order_date__gte=timezone.now()-timedelta(days=7))
+            time_period = 'неделю'
+        elif days == '30':
+            orders = Order.objects.filter(client=client, order_date__gte=timezone.now()-timedelta(days=30))
+            time_period = 'месяц'
+        else:
+            orders = Order.objects.filter(client=client, order_date__gte=timezone.now()-timedelta(days=365))
+            time_period = 'год'
+        products = []
+        for order in orders:
+            products.extend(order.products.all())
+        products = list(set(products))
+        context.update({
+            'client': client,
+            'products': products,
+            'days': time_period
+        })
+    return render(request, 'Homework2/report.html', context)
+
+
+
+
+
+
+
+
 # def read_client(request):
 #     if request.method == 'POST':
 #         client_id = request.POST.get('client_id')
@@ -83,8 +174,6 @@ def read_client(request):
 #         return render(request, 'read_client_form.html')
 #
 #
-#
-
 #
 # def update_client(request, client_id):
 #     client = get_object_or_404(Client, id=client_id)
@@ -97,8 +186,8 @@ def read_client(request):
 #         return HttpResponse('Данные обновлены')
 #     else:
 #         return render(request, 'update_client.html', {'client': client})
-#
-#
+
+
 # def delete_client(request, client_id):
 #     client = get_object_or_404(Client, id=client_id)
 #     client.delete()
