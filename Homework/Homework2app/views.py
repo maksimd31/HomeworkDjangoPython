@@ -1,14 +1,8 @@
-from django.shortcuts import render
-from django.db.models import Q
+from .forms import ProductForm
 from datetime import datetime, timedelta, timezone
-from django.utils import timezone
-from .models import Order
-# Create your views here.
-from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
 from .models import Client, Products, Order
 from django.utils import timezone
-from datetime import timedelta
+from django.shortcuts import render, get_object_or_404, redirect
 
 # Create your views here.
 
@@ -292,8 +286,29 @@ def user_form(request):
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             age = form.cleaned_data['age']
-# Делаем что-то с данными
+            # Делаем что-то с данными
             logger.info(f'Получили {name=}, {email=}, {age=}.')
     else:
         form = ClientForm()
         return render(request, 'Homework2/client_forms.html', {'form': form})
+
+
+def product_list(request):
+    products = Products.objects.all()
+    return render(request, 'product_list.html', {'products': products})
+
+
+def product_detail(request, pk):
+    product = get_object_or_404(Products, pk=pk)
+    return render(request, 'product_detail.html', {'product': product})
+
+
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('product_list')
+    else:
+        form = ProductForm()
+    return render(request, 'add_product.html', {'form': form})
