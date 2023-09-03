@@ -1,8 +1,10 @@
 from django.urls import path
 from . import views
-from .views import product_list, product_detail , add_product
+from .views import product_list, product_detail, add_product
+from django.contrib import admin
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('client', views.client, name='client'),
     path('about', views.about, name='about'),
