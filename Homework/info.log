@@ -1499,3 +1499,4 @@ django.db.utils.OperationalError: no such column: Homework2app_product.descripti
 2023-09-03 19:03:33,050 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
 2023-09-03 19:03:33,365 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
 2023-09-03 19:14:58,042 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 19:14:58,449 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
