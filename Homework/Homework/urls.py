@@ -29,10 +29,10 @@ urlpatterns = [
     # path('__debug__/', include("debug_toolbar.urls")),
 
 ]
-if settings.DEBUG:
-    """
-    Если сайт запускается в режиме отладки к маршрутам добавляем еще маршрут 
-    """
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-handler404 = pageNotFound
+# if settings.DEBUG:
+#     """
+#     Если сайт запускается в режиме отладки к маршрутам добавляем еще маршрут
+#     """
+#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+#
+# handler404 = pageNotFound
