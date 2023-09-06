@@ -29,15 +29,15 @@ CSRF_COOKIE_SECURE = True
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-# ALLOWED_HOSTS = [
-#     '127.0.0.1',
-#     'ms30.pythonanywhere.com'
-# ]
-
 ALLOWED_HOSTS = [
-    'localhost',
+    '127.0.0.1',
     'ms30.pythonanywhere.com'
 ]
+#
+# ALLOWED_HOSTS = [
+#     'localhost',
+#     'ms30.pythonanywhere.com'
+# ]
 
 INTERNAL_IPS = [
     '127.0.0.1', ]
@@ -190,5 +190,8 @@ LOGGING = {
 STATIC_ROOT = BASE_DIR / 'static/'
 STATICFILES = []
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
