@@ -1,20 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>{% block title %}{% endblock %}</title>
+	<link type="text/css" href="{% static 'Homework2app/css/styles.css' %}" rel="stylesheet" />
+<!--	Прикрутил стили -->
 </head>
 <body>
 	<header>
-<!--		<nav>-->
-<!--			<ul>-->
-<!--				<li><a href="#">'index'</a></li>-->
-<!--				<li><a href="#">'about'</a></li>-->
-<!--				<li><a href="#">'client'</a></li>-->
-<!--			</ul>-->
-<!--		</nav>-->
+
+
 		<a href="about"><button>О сайте</button></a>
 		<a href="client"><button>Клиенты</button></a>
 		<a href="index"><button>Главная страница</button></a>
+		<a href="report"><button>Отчеты</button></a>
 
 
 	</header>

@@ -604,3 +604,243 @@ TypeError: read_client() missing 1 required positional argument: 'client_id'
 2023-08-25 19:59:52,979 - INFO - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 200 1567
 2023-08-25 20:00:42,710 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
 2023-08-25 20:00:43,062 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-25 20:02:20,050 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-25 20:02:20,425 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-28 14:32:35,705 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-28 14:32:42,882 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 726
+2023-08-28 14:32:43,075 - WARNING - log - log.py - Not Found: /{% static 'Homework2app/css/styles.css %'}
+2023-08-28 14:32:43,075 - WARNING - basehttp - basehttp.py - "GET /%7B%%20static%20'Homework2app/css/styles.css%20%'%7D HTTP/1.1" 404 3584
+2023-08-28 14:33:09,095 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 727
+2023-08-28 14:33:09,104 - WARNING - log - log.py - Not Found: /{% static 'Homework2app/css/styles.css %'}
+2023-08-28 14:33:09,104 - WARNING - basehttp - basehttp.py - "GET /%7B%%20static%20'Homework2app/css/styles.css%20%'%7D HTTP/1.1" 404 3584
+2023-08-28 14:33:10,111 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 727
+2023-08-28 14:33:10,120 - WARNING - log - log.py - Not Found: /{% static 'Homework2app/css/styles.css %'}
+2023-08-28 14:33:10,120 - WARNING - basehttp - basehttp.py - "GET /%7B%%20static%20'Homework2app/css/styles.css%20%'%7D HTTP/1.1" 404 3584
+2023-08-28 14:33:10,578 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 727
+2023-08-28 14:33:10,589 - WARNING - log - log.py - Not Found: /{% static 'Homework2app/css/styles.css %'}
+2023-08-28 14:33:10,589 - WARNING - basehttp - basehttp.py - "GET /%7B%%20static%20'Homework2app/css/styles.css%20%'%7D HTTP/1.1" 404 3584
+2023-08-28 14:33:10,896 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 727
+2023-08-28 14:33:10,904 - WARNING - log - log.py - Not Found: /{% static 'Homework2app/css/styles.css %'}
+2023-08-28 14:33:10,904 - WARNING - basehttp - basehttp.py - "GET /%7B%%20static%20'Homework2app/css/styles.css%20%'%7D HTTP/1.1" 404 3584
+2023-08-28 14:35:37,708 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 800
+2023-08-28 14:35:37,722 - WARNING - basehttp - basehttp.py - "GET /static/women/css/styles.css HTTP/1.1" 404 1819
+2023-08-28 14:35:37,723 - INFO - basehttp - basehttp.py - "GET /static/Homework2app/css/styles.css HTTP/1.1" 200 6771
+2023-08-28 14:35:38,641 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 800
+2023-08-28 14:35:38,649 - WARNING - basehttp - basehttp.py - "GET /static/women/css/styles.css HTTP/1.1" 404 1819
+2023-08-28 14:35:39,540 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 800
+2023-08-28 14:35:39,548 - WARNING - basehttp - basehttp.py - "GET /static/women/css/styles.css HTTP/1.1" 404 1819
+2023-08-28 14:36:30,973 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 569
+2023-08-28 14:36:30,983 - INFO - basehttp - basehttp.py - "GET /static/Homework2app/css/styles.css HTTP/1.1" 304 0
+2023-08-28 14:36:46,681 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 1232
+2023-08-28 14:36:48,498 - INFO - basehttp - basehttp.py - "GET /index HTTP/1.1" 200 567
+2023-08-28 14:36:50,015 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 562
+2023-08-28 14:37:03,816 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 562
+2023-08-28 14:37:07,117 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 549
+2023-08-28 14:39:16,756 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 549
+2023-08-28 14:39:16,761 - INFO - basehttp - basehttp.py - "GET /static/Homework2app/css/styles.css HTTP/1.1" 304 0
+2023-08-28 14:39:17,755 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 549
+2023-08-28 14:39:22,124 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 549
+2023-08-28 14:39:22,791 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 549
+2023-08-28 14:39:23,041 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 549
+2023-08-28 14:39:23,275 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 549
+2023-08-30 11:43:08,917 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 11:43:11,837 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 567
+2023-08-30 11:43:12,011 - INFO - basehttp - basehttp.py - "GET /static/Homework2app/css/styles.css HTTP/1.1" 304 0
+2023-08-30 11:45:39,330 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 11:45:41,076 - WARNING - log - log.py - Not Found: /report
+2023-08-30 11:45:41,076 - WARNING - basehttp - basehttp.py - "GET /report HTTP/1.1" 404 3432
+2023-08-30 11:49:39,308 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 11:49:39,646 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 11:50:41,329 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 11:50:41,678 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 11:53:46,098 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 11:53:46,452 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 11:54:39,650 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 11:54:41,572 - WARNING - log - log.py - Not Found: /report
+2023-08-30 11:54:41,573 - WARNING - basehttp - basehttp.py - "GET /report HTTP/1.1" 404 3432
+2023-08-30 11:55:51,720 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/urls.py changed, reloading.
+2023-08-30 11:55:52,100 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 11:55:53,417 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 124, in orders_in_past_week
+    return render(request, 'orders_in_past_week.html', context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: orders_in_past_week.html
+2023-08-30 11:55:53,435 - ERROR - basehttp - basehttp.py - "GET /report HTTP/1.1" 500 77208
+2023-08-30 11:55:54,550 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 124, in orders_in_past_week
+    return render(request, 'orders_in_past_week.html', context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: orders_in_past_week.html
+2023-08-30 11:55:54,551 - ERROR - basehttp - basehttp.py - "GET /report HTTP/1.1" 500 77208
+2023-08-30 11:56:10,255 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 11:56:12,307 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 124, in orders_in_past_week
+    return render(request, 'orders_in_past_week.html', context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: orders_in_past_week.html
+2023-08-30 11:56:12,308 - ERROR - basehttp - basehttp.py - "GET /report HTTP/1.1" 500 77208
+2023-08-30 11:57:08,037 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 11:57:08,378 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 11:57:13,067 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 11:57:14,613 - INFO - basehttp - basehttp.py - "GET /report HTTP/1.1" 200 1238
+2023-08-30 11:57:17,409 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 1317
+2023-08-30 11:57:23,290 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 1352
+2023-08-30 11:58:01,151 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 1358
+2023-08-30 11:58:31,309 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 1381
+2023-08-30 11:58:36,428 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 1340
+2023-08-30 12:00:26,113 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 1340
+2023-08-30 12:02:32,229 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 12:02:32,640 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 12:03:04,021 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/urls.py changed, reloading.
+2023-08-30 12:03:04,376 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 12:04:01,306 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 12:04:02,858 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: orders_in_past_days() missing 1 required positional argument: 'days'
+2023-08-30 12:04:02,859 - ERROR - basehttp - basehttp.py - "GET /report HTTP/1.1" 500 57050
+2023-08-30 12:04:46,220 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: orders_in_past_days() missing 1 required positional argument: 'days'
+2023-08-30 12:04:46,220 - ERROR - basehttp - basehttp.py - "GET /report HTTP/1.1" 500 57050
+2023-08-30 12:04:47,219 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: orders_in_past_days() missing 1 required positional argument: 'days'
+2023-08-30 12:04:47,220 - ERROR - basehttp - basehttp.py - "GET /report HTTP/1.1" 500 57050
+2023-08-30 12:04:52,285 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 12:04:56,070 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: orders_in_past_days() missing 1 required positional argument: 'days'
+2023-08-30 12:04:56,071 - ERROR - basehttp - basehttp.py - "GET /report HTTP/1.1" 500 57050
+2023-08-30 12:08:52,504 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 12:08:52,837 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 12:08:54,245 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 12:08:55,709 - INFO - basehttp - basehttp.py - "GET /report HTTP/1.1" 200 1556
+2023-08-30 12:09:01,255 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 1631
+2023-08-30 12:09:06,034 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 1666
+2023-08-30 12:23:15,063 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 12:23:16,569 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 12:23:18,325 - INFO - basehttp - basehttp.py - "GET /report HTTP/1.1" 200 11904
+2023-08-30 12:23:23,757 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12024
+2023-08-30 12:23:26,060 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 128, in orders_in_past_days
+    'days_ago': days_ago
+UnboundLocalError: local variable 'days_ago' referenced before assignment
+2023-08-30 12:23:26,061 - ERROR - basehttp - basehttp.py - "POST /report HTTP/1.1" 500 65892
+2023-08-30 12:23:33,657 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 128, in orders_in_past_days
+    'days_ago': days_ago
+UnboundLocalError: local variable 'days_ago' referenced before assignment
+2023-08-30 12:23:33,658 - ERROR - basehttp - basehttp.py - "POST /report HTTP/1.1" 500 65893
+2023-08-30 12:24:38,155 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12068
+2023-08-30 12:25:04,996 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12092
+2023-08-30 12:25:41,578 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12124
+2023-08-30 12:25:45,748 - ERROR - log - log.py - Internal Server Error: /report
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 128, in orders_in_past_days
+    'days_ago': days_ago
+UnboundLocalError: local variable 'days_ago' referenced before assignment
+2023-08-30 12:25:45,749 - ERROR - basehttp - basehttp.py - "POST /report HTTP/1.1" 500 65893
+2023-08-30 12:26:36,976 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 12:26:37,382 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 12:26:39,613 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12492
+2023-08-30 12:26:51,252 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12742
+2023-08-30 12:26:58,186 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12492
+2023-08-30 12:27:04,804 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12742
+2023-08-30 12:27:24,409 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12492
+2023-08-30 12:27:25,610 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12492
+2023-08-30 12:27:32,083 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 13556
+2023-08-30 12:27:50,550 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12492
+2023-08-30 12:28:31,740 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12478
+2023-08-30 12:28:35,090 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12478
+2023-08-30 12:28:38,165 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12478
+2023-08-30 12:28:41,300 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12114
+2023-08-30 12:28:47,502 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12666
+2023-08-30 12:31:02,817 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 12:31:03,202 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 12:31:06,148 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12665
+2023-08-30 12:31:09,936 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12477
+2023-08-30 12:31:12,698 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12477
+2023-08-30 12:31:14,866 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12477
+2023-08-30 12:31:17,451 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12477
+2023-08-30 12:32:13,990 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 12:32:14,393 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 12:32:16,042 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 12:32:17,408 - INFO - basehttp - basehttp.py - "GET /report HTTP/1.1" 200 11958
+2023-08-30 12:32:21,636 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12234
+2023-08-30 12:32:50,226 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12505
+2023-08-30 12:32:51,209 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12505
+2023-08-30 12:32:51,958 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12505
+2023-08-30 12:34:53,131 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12428
+2023-08-30 12:34:54,580 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12428
+2023-08-30 12:34:55,513 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12428
+2023-08-30 12:34:56,479 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12428
+2023-08-30 12:34:57,868 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12428
+2023-08-30 12:34:58,531 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12428
+2023-08-30 12:34:59,151 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12428
+2023-08-30 12:34:59,797 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12428
+2023-08-30 12:38:44,818 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 12:38:45,185 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 12:38:47,292 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12433
+2023-08-30 12:38:50,568 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12439
+2023-08-30 12:38:52,069 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12437
+2023-08-30 12:38:52,950 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12433

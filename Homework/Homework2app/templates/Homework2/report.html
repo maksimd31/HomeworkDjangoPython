@@ -1,0 +1,26 @@
+{% extends 'Homework2/base.html' %}
+
+{%block content %}
+<h1>{{title}}</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <form method="POST">
+        {% csrf_token %}
+        <select name="client_id">
+            {% for client in clients %}
+            <option value="{{ client.id }}">{{ client.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit" name="report" value="7">отчет за 7 дней</button>
+        <button type="submit" name="report" value="30">отчет за 30 дней</button>
+        <button type="submit" name="report" value="365">отчет за год </button>
+    </form>
+    {% if client %}
+    <h2>Список покупок у {{ client.name }} за последние {{ days }}:</h2>
+    <ul>
+        {% for product in products %}
+        <li>{{ product.product_name }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+{% endblock %}
