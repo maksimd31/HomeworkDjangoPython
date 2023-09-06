@@ -844,3 +844,687 @@ UnboundLocalError: local variable 'days_ago' referenced before assignment
 2023-08-30 12:38:50,568 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12439
 2023-08-30 12:38:52,069 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12437
 2023-08-30 12:38:52,950 - INFO - basehttp - basehttp.py - "POST /report HTTP/1.1" 200 12433
+2023-08-30 13:46:50,418 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 13:46:52,486 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15695
+2023-08-30 13:47:01,943 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15695
+2023-08-30 13:48:48,542 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 13:48:48,931 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 13:50:12,758 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 13:50:13,116 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 13:50:52,554 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-30 13:50:53,025 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-30 13:55:46,336 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 13:56:24,305 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 620
+2023-08-30 13:56:26,868 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15695
+2023-08-31 15:48:30,434 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-31 15:49:41,989 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-08-31 15:49:42,182 - INFO - basehttp - basehttp.py - "GET /static/Homework2app/css/styles.css HTTP/1.1" 304 0
+2023-08-31 15:49:44,306 - ERROR - log - log.py - Internal Server Error: /product_list
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 299, in product_list
+    return render(request, 'product_list.html', {'products': products})
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2023-08-31 15:49:44,310 - ERROR - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 500 130872
+2023-08-31 15:50:01,078 - ERROR - log - log.py - Internal Server Error: /product_list
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 299, in product_list
+    return render(request, 'product_list.html', {'products': products})
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2023-08-31 15:50:01,081 - ERROR - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 500 130775
+2023-08-31 15:50:21,052 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6316
+2023-08-31 15:50:25,605 - ERROR - log - log.py - Internal Server Error: /64/
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 304, in product_detail
+    return render(request, 'product_detail.html', {'product': product})
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2023-08-31 15:50:25,608 - ERROR - basehttp - basehttp.py - "GET /64/ HTTP/1.1" 500 125620
+2023-08-31 15:50:36,745 - ERROR - log - log.py - Internal Server Error: /64/
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 304, in product_detail
+    return render(request, 'product_detail.html', {'product': product})
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/fields/files.py", line 66, in url
+    self._require_file()
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'product_photo' attribute has no file associated with it.
+2023-08-31 15:50:36,752 - ERROR - basehttp - basehttp.py - "GET /64/ HTTP/1.1" 500 167395
+2023-08-31 15:50:37,766 - ERROR - log - log.py - Internal Server Error: /64/
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 304, in product_detail
+    return render(request, 'product_detail.html', {'product': product})
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/fields/files.py", line 66, in url
+    self._require_file()
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'product_photo' attribute has no file associated with it.
+2023-08-31 15:50:37,771 - ERROR - basehttp - basehttp.py - "GET /64/ HTTP/1.1" 500 167395
+2023-08-31 15:52:23,330 - INFO - basehttp - basehttp.py - "GET /64/ HTTP/1.1" 200 1051
+2023-08-31 15:53:03,078 - WARNING - log - log.py - Not Found: /64/product_detail
+2023-08-31 15:53:03,078 - WARNING - basehttp - basehttp.py - "GET /64/product_detail HTTP/1.1" 404 3998
+2023-08-31 15:53:11,563 - WARNING - log - log.py - Not Found: /64/product_detail
+2023-08-31 15:53:11,563 - WARNING - basehttp - basehttp.py - "GET /64/product_detail HTTP/1.1" 404 3998
+2023-08-31 15:53:15,629 - INFO - basehttp - basehttp.py - "GET /64/ HTTP/1.1" 200 982
+2023-08-31 15:53:17,848 - WARNING - log - log.py - Not Found: /64/product_list
+2023-08-31 15:53:17,848 - WARNING - basehttp - basehttp.py - "GET /64/product_list HTTP/1.1" 404 3992
+2023-08-31 15:53:25,801 - WARNING - log - log.py - Not Found: /64/product_list
+2023-08-31 15:53:25,802 - WARNING - basehttp - basehttp.py - "GET /64/product_list HTTP/1.1" 404 3992
+2023-08-31 15:53:43,372 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/urls.py changed, reloading.
+2023-08-31 15:53:43,693 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-31 15:53:44,627 - WARNING - log - log.py - Not Found: /64/product_list
+2023-08-31 15:53:44,628 - WARNING - basehttp - basehttp.py - "GET /64/product_list HTTP/1.1" 404 3807
+2023-08-31 15:53:45,359 - WARNING - log - log.py - Not Found: /64/product_list
+2023-08-31 15:53:45,359 - WARNING - basehttp - basehttp.py - "GET /64/product_list HTTP/1.1" 404 3807
+2023-08-31 15:53:50,938 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/urls.py changed, reloading.
+2023-08-31 15:53:51,267 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-31 15:53:52,050 - WARNING - log - log.py - Not Found: /64/product_list
+2023-08-31 15:53:52,051 - WARNING - basehttp - basehttp.py - "GET /64/product_list HTTP/1.1" 404 3992
+2023-08-31 15:53:53,110 - WARNING - log - log.py - Not Found: /64/product_list
+2023-08-31 15:53:53,110 - WARNING - basehttp - basehttp.py - "GET /64/product_list HTTP/1.1" 404 3992
+2023-08-31 15:53:58,595 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-08-31 15:54:00,689 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6316
+2023-08-31 15:54:03,795 - INFO - basehttp - basehttp.py - "GET /62/ HTTP/1.1" 200 1162
+2023-08-31 15:55:26,455 - INFO - basehttp - basehttp.py - "GET /62/ HTTP/1.1" 200 1199
+2023-08-31 15:55:41,110 - WARNING - log - log.py - Not Found: /64/product_list
+2023-08-31 15:55:41,110 - WARNING - basehttp - basehttp.py - "GET /64/product_list HTTP/1.1" 404 3992
+2023-08-31 16:17:16,411 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py changed, reloading.
+2023-08-31 16:17:16,800 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-31 16:20:24,510 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-08-31 16:20:24,610 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/urls.py changed, reloading.
+2023-08-31 16:20:25,113 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-31 16:20:37,769 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6316
+2023-08-31 16:22:12,703 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6316
+2023-08-31 16:22:14,785 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6417
+2023-08-31 16:22:16,365 - INFO - basehttp - basehttp.py - "GET /add_product HTTP/1.1" 301 0
+2023-08-31 16:22:16,411 - ERROR - log - log.py - Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/views.py", line 314, in add_product
+    return render(request, 'add_product.html', {'form': form})
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2023-08-31 16:22:16,414 - ERROR - basehttp - basehttp.py - "GET /add_product/ HTTP/1.1" 500 126892
+2023-08-31 16:22:34,786 - INFO - basehttp - basehttp.py - "GET /add_product/ HTTP/1.1" 200 1841
+2023-08-31 16:24:25,437 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/forms.py changed, reloading.
+2023-08-31 16:24:25,809 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-31 16:26:14,321 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-31 16:26:16,536 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-08-31 16:26:16,586 - INFO - basehttp - basehttp.py - "GET /static/Homework2app/css/styles.css HTTP/1.1" 200 6771
+2023-08-31 16:26:18,050 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6417
+2023-08-31 16:26:19,147 - INFO - basehttp - basehttp.py - "GET /add_product/ HTTP/1.1" 200 1841
+2023-08-31 19:34:22,600 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-08-31 19:34:27,582 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-08-31 19:34:29,638 - INFO - basehttp - basehttp.py - "GET /about HTTP/1.1" 200 749
+2023-08-31 19:34:30,541 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15842
+2023-08-31 19:34:32,263 - INFO - basehttp - basehttp.py - "GET /read_client HTTP/1.1" 200 1700
+2023-08-31 19:34:36,375 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15842
+2023-08-31 19:34:37,562 - INFO - basehttp - basehttp.py - "GET /create_client HTTP/1.1" 200 1322
+2023-08-31 19:34:39,110 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15842
+2023-08-31 19:34:39,623 - INFO - basehttp - basehttp.py - "GET /index HTTP/1.1" 200 767
+2023-08-31 19:34:40,706 - INFO - basehttp - basehttp.py - "GET /report HTTP/1.1" 200 12055
+2023-09-03 16:55:25,578 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 16:55:34,429 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 16:55:37,647 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-09-03 16:55:37,853 - INFO - basehttp - basehttp.py - "GET /static/Homework2app/css/styles.css HTTP/1.1" 200 6771
+2023-09-03 16:55:46,073 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-09-03 16:55:47,019 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-09-03 16:55:49,856 - INFO - basehttp - basehttp.py - "GET /admin HTTP/1.1" 301 0
+2023-09-03 16:55:49,873 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 302 0
+2023-09-03 16:55:49,904 - INFO - basehttp - basehttp.py - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2023-09-03 16:55:49,918 - INFO - basehttp - basehttp.py - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2023-09-03 16:55:49,918 - INFO - basehttp - basehttp.py - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+2023-09-03 16:55:49,923 - INFO - basehttp - basehttp.py - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2023-09-03 16:55:49,924 - INFO - basehttp - basehttp.py - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2023-09-03 16:55:49,924 - INFO - basehttp - basehttp.py - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2023-09-03 16:55:49,926 - INFO - basehttp - basehttp.py - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2023-09-03 16:55:49,927 - INFO - basehttp - basehttp.py - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+2023-09-03 16:56:20,179 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
+2023-09-03 16:56:20,526 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:08:22,726 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:08:25,315 - INFO - basehttp - basehttp.py - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2023-09-03 18:08:27,913 - INFO - basehttp - basehttp.py - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2023-09-03 18:08:28,093 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 200 5556
+2023-09-03 18:08:28,103 - INFO - basehttp - basehttp.py - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2023-09-03 18:08:28,115 - INFO - basehttp - basehttp.py - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2023-09-03 18:08:28,116 - INFO - basehttp - basehttp.py - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2023-09-03 18:11:10,460 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-09-03 18:11:10,821 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:12:18,559 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-09-03 18:12:18,896 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:13:16,745 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:13:18,564 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-09-03 18:13:22,550 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 200 5556
+2023-09-03 18:13:23,543 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 200 5556
+2023-09-03 18:14:04,408 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 18:14:04,735 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:14:04,937 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 200 6699
+2023-09-03 18:15:13,474 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 18:15:13,813 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:15:14,650 - INFO - basehttp - basehttp.py - "GET /admin/ HTTP/1.1" 200 8018
+2023-09-03 18:15:26,564 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/order/add/ HTTP/1.1" 200 27888
+2023-09-03 18:15:26,587 - INFO - basehttp - basehttp.py - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2023-09-03 18:15:26,587 - INFO - basehttp - basehttp.py - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2023-09-03 18:15:26,588 - INFO - basehttp - basehttp.py - "GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+2023-09-03 18:15:26,591 - INFO - basehttp - basehttp.py - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2023-09-03 18:15:26,592 - INFO - basehttp - basehttp.py - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2023-09-03 18:15:26,595 - INFO - basehttp - basehttp.py - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2023-09-03 18:15:26,596 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:15:26,597 - INFO - basehttp - basehttp.py - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2023-09-03 18:15:26,599 - INFO - basehttp - basehttp.py - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2023-09-03 18:15:26,602 - INFO - basehttp - basehttp.py - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2023-09-03 18:15:26,602 - INFO - basehttp - basehttp.py - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+2023-09-03 18:15:26,604 - INFO - basehttp - basehttp.py - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2023-09-03 18:15:26,606 - INFO - basehttp - basehttp.py - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2023-09-03 18:15:26,607 - INFO - basehttp - basehttp.py - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2023-09-03 18:15:41,464 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/products/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7127
+2023-09-03 18:15:41,475 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:15:52,504 - INFO - basehttp - basehttp.py - "POST /admin/Homework2app/order/add/ HTTP/1.1" 302 0
+2023-09-03 18:15:52,546 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/order/add/ HTTP/1.1" 200 28167
+2023-09-03 18:15:52,559 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:15:52,573 - INFO - basehttp - basehttp.py - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2023-09-03 18:43:43,780 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-09-03 18:43:44,114 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:44:52,886 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-09-03 18:44:53,254 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:52:07,714 - WARNING - log - log.py - Not Found: /product_detail
+2023-09-03 18:52:07,715 - WARNING - basehttp - basehttp.py - "GET /product_detail HTTP/1.1" 404 4321
+2023-09-03 18:52:10,543 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6417
+2023-09-03 18:52:12,366 - INFO - basehttp - basehttp.py - "GET /20/ HTTP/1.1" 200 1036
+2023-09-03 18:52:22,137 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/order/add/ HTTP/1.1" 200 27888
+2023-09-03 18:52:22,150 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:52:39,823 - ERROR - log - log.py - Internal Server Error: /admin/Homework2app/product/
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: Homework2app_product.description
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: Homework2app_product.description
+2023-09-03 18:52:39,829 - ERROR - basehttp - basehttp.py - "GET /admin/Homework2app/product/ HTTP/1.1" 500 156812
+2023-09-03 18:52:42,891 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/products/ HTTP/1.1" 200 32088
+2023-09-03 18:52:42,932 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:52:42,933 - INFO - basehttp - basehttp.py - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+2023-09-03 18:52:42,933 - INFO - basehttp - basehttp.py - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2023-09-03 18:52:42,955 - INFO - basehttp - basehttp.py - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2023-09-03 18:52:47,495 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/category/ HTTP/1.1" 200 8743
+2023-09-03 18:52:47,506 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:52:49,772 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/client/ HTTP/1.1" 200 38318
+2023-09-03 18:52:49,784 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:52:51,918 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/order/ HTTP/1.1" 200 37928
+2023-09-03 18:52:51,930 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:52:53,045 - ERROR - log - log.py - Internal Server Error: /admin/Homework2app/product/
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: Homework2app_product.description
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: Homework2app_product.description
+2023-09-03 18:52:53,047 - ERROR - basehttp - basehttp.py - "GET /admin/Homework2app/product/ HTTP/1.1" 500 156808
+2023-09-03 18:53:40,489 - ERROR - log - log.py - Internal Server Error: /admin/Homework2app/product/
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: Homework2app_product.description
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2065, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/imacson/Desktop/python_project/HomeworkDjangoPython/venv/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: Homework2app_product.description
+2023-09-03 18:53:40,491 - ERROR - basehttp - basehttp.py - "GET /admin/Homework2app/product/ HTTP/1.1" 500 156808
+2023-09-03 18:53:44,628 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/products/ HTTP/1.1" 200 32088
+2023-09-03 18:53:44,639 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:54:01,158 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/products/62/change/ HTTP/1.1" 200 12823
+2023-09-03 18:54:01,169 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:55:07,934 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/products/69/change/ HTTP/1.1" 200 12733
+2023-09-03 18:55:07,946 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:55:35,224 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/products/98/change/ HTTP/1.1" 200 12699
+2023-09-03 18:55:35,236 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:56:05,469 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/client/ HTTP/1.1" 200 38318
+2023-09-03 18:56:05,480 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:56:20,664 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/client/100/change/ HTTP/1.1" 200 11965
+2023-09-03 18:56:20,675 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:56:37,409 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/client/29/change/ HTTP/1.1" 200 12003
+2023-09-03 18:56:37,423 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:56:46,182 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/client/?p=2 HTTP/1.1" 200 11478
+2023-09-03 18:56:46,194 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:56:47,919 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/client/3/change/?_changelist_filters=p%3D2 HTTP/1.1" 200 11923
+2023-09-03 18:56:47,931 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:56:52,167 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/client/1/change/?_changelist_filters=p%3D2 HTTP/1.1" 200 11751
+2023-09-03 18:56:52,177 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:56:53,923 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/client/1/delete/?_changelist_filters=p%3D2 HTTP/1.1" 200 9574
+2023-09-03 18:56:53,937 - INFO - basehttp - basehttp.py - "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+2023-09-03 18:56:58,366 - INFO - basehttp - basehttp.py - "POST /admin/Homework2app/client/1/delete/?_changelist_filters=p%3D2 HTTP/1.1" 302 0
+2023-09-03 18:56:58,386 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/client/?p=2 HTTP/1.1" 200 11395
+2023-09-03 18:56:58,397 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:57:00,754 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/order/ HTTP/1.1" 200 37557
+2023-09-03 18:57:00,764 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:57:03,473 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/order/37/change/ HTTP/1.1" 200 28317
+2023-09-03 18:57:03,484 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 18:59:14,189 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 18:59:15,676 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-09-03 18:59:23,861 - INFO - basehttp - basehttp.py - "GET /admin/Homework2app/order/37/change/ HTTP/1.1" 200 28317
+2023-09-03 18:59:23,874 - INFO - basehttp - basehttp.py - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-09-03 19:00:35,130 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 19:00:35,461 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 19:01:33,109 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 19:01:33,419 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 19:02:15,933 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 19:02:16,255 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 19:02:32,575 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 19:02:32,884 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 19:03:21,470 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 19:03:21,782 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 19:03:33,050 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 19:03:33,365 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-03 19:14:58,042 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
+2023-09-03 19:14:58,449 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:45:26,871 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:46:17,973 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:46:43,561 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:47:20,494 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:48:33,170 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:49:56,413 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:50:01,603 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-09-04 15:50:01,988 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:50:04,562 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:51:32,152 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:53:03,008 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-09-04 15:53:03,325 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:53:20,932 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:55:53,737 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:56:30,310 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:56:35,204 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-09-04 15:56:35,383 - INFO - basehttp - basehttp.py - "GET /static/Homework2app/css/styles.css HTTP/1.1" 304 0
+2023-09-04 15:56:58,642 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:57:06,451 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6417
+2023-09-04 15:57:07,694 - INFO - basehttp - basehttp.py - "GET /report HTTP/1.1" 200 11999
+2023-09-04 15:57:08,503 - INFO - basehttp - basehttp.py - "GET /index HTTP/1.1" 200 767
+2023-09-04 15:57:09,488 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15763
+2023-09-04 15:57:22,492 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-06 16:01:47,864 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-06 16:03:34,204 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
+2023-09-06 16:03:34,597 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-06 16:04:09,029 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
+2023-09-06 16:04:09,376 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader

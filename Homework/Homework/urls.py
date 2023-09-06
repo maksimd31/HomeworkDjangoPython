@@ -26,6 +26,7 @@ urlpatterns = [
     # path('', include('hmapp.urls')),
     # path('', include('hmapp2.urls')),
     path('', include('Homework2app.urls')),
+    path('__debug__/', include("debug_toolbar.urls")),
 
 ]
 if settings.DEBUG:

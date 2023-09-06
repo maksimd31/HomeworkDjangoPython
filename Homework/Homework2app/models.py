@@ -17,9 +17,9 @@ class Client(models.Model):
 
 class Products(models.Model):
     product_name = models.CharField(max_length=150)
-    product_descripsion = models.TextField(blank=True)
+    product_description = models.TextField(blank=True)
     product_price = models.IntegerField()
-    product_quantiti = models.IntegerField(max_length=100)
+    product_quantity = models.IntegerField()
     product_add_date = models.DateTimeField(auto_now=True)
     product_photo = models.ImageField(upload_to='photos/%y/%m%d/')
 
@@ -31,7 +31,7 @@ class Products(models.Model):
 
 
 class Order(models.Model):
-    client = models.ForeignKey(Client, on_delete=models.CASCADE)  # для дипломного проекта не подойдет
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
     products = models.ManyToManyField(Products)
     total_price = models.IntegerField()
     order_date = models.DateTimeField(auto_now_add=True)
@@ -59,3 +59,31 @@ create(), all(), filter(), exclude(), get()
 >>> Client.objects.all()
 <QuerySet [<Client: Client object (1)>, <Client: Client object (2)>]>
 '''
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.name
+
+    def __repr__(self):
+        return self.name
+
+
+class Product(models.Model):
+    name = models.CharField(max_length=50)
+    category = models.ForeignKey(Category,
+                                 on_delete=models.CASCADE)
+    description = models.TextField(default='', blank=True)
+    price = models.DecimalField(default=999999.99, max_digits=8, decimal_places=2)
+    quantity = models.PositiveSmallIntegerField(default=0)
+    date_added = models.DateTimeField(auto_now=True)
+    rating = models.DecimalField(default=5.0, max_digits=3, decimal_places=2)
+
+    def __str__(self):
+        return self.name
+
+
+def __repr__(self):
+    return self.name
