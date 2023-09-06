@@ -22,12 +22,12 @@ class ProductAdmin(admin.ModelAdmin):
 
 class ClientAdmin(admin.ModelAdmin):
     list_display = ['name', 'email']
-    ordering = ['date', '-quantity']
+    ordering = ['date']
     list_filter = ['date']
 
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ['products', 'total_price']
+    list_display = ['total_price']
     ordering = ['order_date']
     list_filter = ['order_date', 'total_price']
     search_fields = ['client']

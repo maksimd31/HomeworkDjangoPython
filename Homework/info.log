@@ -1500,3 +1500,31 @@ django.db.utils.OperationalError: no such column: Homework2app_product.descripti
 2023-09-03 19:03:33,365 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
 2023-09-03 19:14:58,042 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/admin.py changed, reloading.
 2023-09-03 19:14:58,449 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:45:26,871 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:46:17,973 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:46:43,561 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:47:20,494 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:48:33,170 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:49:56,413 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:50:01,603 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-09-04 15:50:01,988 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:50:04,562 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:51:32,152 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:53:03,008 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework2app/models.py changed, reloading.
+2023-09-04 15:53:03,325 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:53:20,932 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:55:53,737 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:56:30,310 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:56:35,204 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-09-04 15:56:35,383 - INFO - basehttp - basehttp.py - "GET /static/Homework2app/css/styles.css HTTP/1.1" 304 0
+2023-09-04 15:56:58,642 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-04 15:57:06,451 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6417
+2023-09-04 15:57:07,694 - INFO - basehttp - basehttp.py - "GET /report HTTP/1.1" 200 11999
+2023-09-04 15:57:08,503 - INFO - basehttp - basehttp.py - "GET /index HTTP/1.1" 200 767
+2023-09-04 15:57:09,488 - INFO - basehttp - basehttp.py - "GET /client HTTP/1.1" 200 15763
+2023-09-04 15:57:22,492 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-06 16:01:47,864 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-06 16:03:34,204 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
+2023-09-06 16:03:34,597 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-06 16:04:09,029 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
+2023-09-06 16:04:09,376 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader

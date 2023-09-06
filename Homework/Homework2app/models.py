@@ -19,7 +19,7 @@ class Products(models.Model):
     product_name = models.CharField(max_length=150)
     product_description = models.TextField(blank=True)
     product_price = models.IntegerField()
-    product_quantity = models.IntegerField(max_length=100)
+    product_quantity = models.IntegerField()
     product_add_date = models.DateTimeField(auto_now=True)
     product_photo = models.ImageField(upload_to='photos/%y/%m%d/')
 
