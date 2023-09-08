@@ -45,3 +45,7 @@
 2023-09-06 20:16:56,651 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
 2023-09-06 20:16:56,981 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
 2023-09-06 20:17:39,089 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-06 20:44:24,204 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-06 20:44:27,985 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
+2023-09-06 20:44:30,249 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6417
+2023-09-08 11:22:30,619 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
