@@ -214,11 +214,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os.path
 from pathlib import Path
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-# load_dotenv(BASE_DIR / '.env')
+load_dotenv(BASE_DIR / '.env')
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -291,7 +292,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ms30$default',
-        'USER': '<ms30',
+        'USER': 'ms30',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
         'HOST': 'ms30.mysql.pythonanywhere-services.com',
         'OPTIONS': {

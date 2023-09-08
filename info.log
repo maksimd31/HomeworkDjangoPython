@@ -49,3 +49,13 @@
 2023-09-06 20:44:27,985 - INFO - basehttp - basehttp.py - "GET / HTTP/1.1" 200 767
 2023-09-06 20:44:30,249 - INFO - basehttp - basehttp.py - "GET /product_list HTTP/1.1" 200 6417
 2023-09-08 11:22:30,619 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-08 16:41:20,749 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-08 16:41:31,130 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-08 16:42:43,327 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-08 16:44:09,012 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
+2023-09-08 16:44:09,411 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-08 16:46:18,589 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-08 16:47:11,662 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-08 16:47:39,012 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-08 16:47:39,217 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
+2023-09-08 16:47:39,506 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
