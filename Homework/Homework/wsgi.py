@@ -16,4 +16,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Homework.settings')
 
 application = get_wsgi_application()
 
-sys.path.append('/home/ms30/.local/lib/python3.10/site-packages/dotenv/__init__.py')
+# sys.path.append('/home/ms30/.local/lib/python3.10/site-packages/dotenv/__init__.py')
