@@ -68,3 +68,5 @@
 2023-09-08 17:44:58,346 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
 2023-09-08 17:45:25,539 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
 2023-09-08 17:45:25,824 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
+2023-09-10 20:57:05,786 - INFO - autoreload - autoreload.py - /Users/imacson/Desktop/python_project/HomeworkDjangoPython/Homework/Homework/settings.py changed, reloading.
+2023-09-10 20:57:06,441 - INFO - autoreload - autoreload.py - Watching for file changes with StatReloader
