@@ -294,7 +294,7 @@ WSGI_APPLICATION = 'Homework.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ms30$default',
+        'NAME': 'ms30$ms30',
         'USER': 'ms30',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
         'HOST': 'ms30.mysql.pythonanywhere-services.com',
