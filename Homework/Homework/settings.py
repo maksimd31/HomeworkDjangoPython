@@ -233,7 +233,7 @@ CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'mss30.pythonanywhere.com'
+    'bms30.pythonanywhere.com'
 ]
 
 INTERNAL_IPS = [
@@ -294,10 +294,10 @@ WSGI_APPLICATION = 'Homework.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mss30$default',
-        'USER': 'mss30',
+        'NAME': 'bms$default',
+        'USER': 'bms30',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'ms30.mysql.pythonanywhere-services.com',
+        'HOST': 'bms30.mysql.pythonanywhere-services.com',
         'OPTIONS': {
             'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
             'charset': 'utf8mb4',
