@@ -312,3 +312,7 @@ def add_product(request):
     else:
         form = ProductForm()
     return render(request, 'add_product.html', {'form': form})
+
+
+def testJs(reqwest):
+    return render(reqwest, 'testJs.html')
