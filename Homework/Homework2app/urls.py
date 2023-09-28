@@ -16,6 +16,6 @@ urlpatterns = [
     path('product_list', product_list, name='product_list'),
     path('<int:pk>/', product_detail, name='product_detail'),
     path('add_product/', add_product, name='add_product'),
-    path('test', views.testJs, name='testJs'),
+    path('testJs', views.testJs, name='testJs'),
 
 ]
